@@ -50,7 +50,7 @@ def test():
     elif request.method=='POST':
         req_json = request.json
         name = req_json['name']
-        return jsonify({"response":"Hi "+ name})
+        return jsonify({"response":"Hello "+ name})
 
 if __name__=='__main__':
     app.run(debug=True)
